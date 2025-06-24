@@ -20,7 +20,7 @@ from lightgbm import LGBMRegressor
 
 @st.cache_data
 def load_and_prepare_data():
-    df = pd.read_csv('MentalHealthSurvey.csv')
+    df = pd.read_csv('MentalHealthSurvey_Preprocessed.csv')
 
     sleep_map = {'2-4 hrs': 0, '4-6 hrs': 1, '7-8 hrs': 2}
     sports_map = {'No Sports': 0, '1-3 times': 1, '4-6 times': 2, '7+ times': 3}
